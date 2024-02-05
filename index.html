@@ -12,8 +12,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500&display=swap" rel="stylesheet" />
-
-    <script src="./assets/js/index.js"></script>
   </head>
 
   <body>
@@ -22,16 +20,18 @@
       <textarea id="caixaDeTexto" cols="30" rows="10" placeholder="Digite seu texto"></textarea>
       <span> <span class="material-symbols-outlined"> error </span>Apenas letras minúsculas e sem acento.</span>
       <div class="botoesCripto-Descripto">
-        <input id="botaoCriptografar" type="button" value="Criptografar" />
-        <input id="botaoDescriptografar" type="button" value="Descriptografar" />
+        <input id="botaoCriptografar" onclick="botaoCriptografar()" type="button" value="Criptografar" />
+        <input id="botaoDescriptografar" onclick="botaoDescriptografar()" type="button" value="Descriptografar" />
       </div>
     </section>
-    <section class="saidaTexto">
+    <section class="saidaTexto" id="saidaTexto">
       <img src="./assets/img/MulherComLupa.svg" alt="Imagem de uma mulher observando um diamante com uma lupa." />
       <div class="semTextoInformativo">
         <h2>Nenhuma mensagem encontrada</h2>
         <span>Digite um texto que voce deseja Criptografar ou Descriptografar</span>
       </div>
     </section>
+
+    <script src="./assets/js/index.js"></script>
   </body>
 </html>
