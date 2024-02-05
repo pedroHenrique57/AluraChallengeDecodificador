@@ -1,6 +1,6 @@
 function botaoCriptografar() {
   let texto = document.getElementById('caixaDeTexto').value;
-  let deslocamento = 1;
+  let deslocamento = 13;
   let resultado = '';
 
   for (let i = 0; i < texto.length; i++) {
@@ -21,7 +21,7 @@ function botaoCriptografar() {
 
 function botaoDescriptografar() {
   let texto = document.getElementById('caixaDeTexto').value;
-  let deslocamento = 1;
+  let deslocamento = 13;
   let resultado = '';
 
   for (let i = 0; i < texto.length; i++) {
