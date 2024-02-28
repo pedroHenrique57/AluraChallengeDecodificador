@@ -6,139 +6,175 @@
   border: none;
 }
 
+body {
+  background-color: #f3f5fc;
+  display: flex;
+}
+
+h2 {
+  color: #343a40;
+}
+
+span {
+  color: #495057;
+}
+
+.aluraLogo {
+  align-self: start;
+}
+
+.entradaTexto {
+  display: flex;
+  flex-direction: column;
+  padding: 2%;
+}
+
+#caixaDeTexto {
+  color: #0a3871;
+  background-color: transparent;
+  border-color: transparent;
+  resize: none;
+}
+
+#caixaDeTexto::placeholder {
+  color: #0a3871;
+  opacity: 1;
+}
+
+#caixaDeTexto:focus {
+  outline: 2px solid #0a3871;
+}
+
+#resultadoCripto_Descripto {
+  padding: 10px 10px;
+  text-align: start;
+}
+
+.material-symbols-outlined {
+  color: #65747d;
+  margin: 0;
+}
+
+.botoesCripto-Descripto {
+  display: flex;
+}
+
+#botaoCriptografar {
+  background-color: #0a3871;
+  color: white;
+  height: 67px;
+  border-radius: 24px;
+}
+
+#botaoDescriptografar {
+  color: #0a3871;
+  background-color: #d8dfe8;
+  height: 67px;
+  border: 1px solid #0a3871;
+  border-radius: 24px;
+}
+
+.saidaTexto {
+  background-color: white;
+  display: flex;
+  padding: 2%;
+  border-radius: 32px;
+}
+
+.saidaTexto span {
+  color: #495057;
+  text-align: center;
+  flex: 1;
+  margin: 0;
+}
+
+.saidaTexto img {
+  width: 90%;
+  align-self: center;
+}
+
+#botaoCopiar {
+  background-color: #0a3871;
+  color: white;
+  height: 67px;
+  border-radius: 24px;
+  margin-top: 15px;
+  align-self: center;
+}
+
+.semTextoInformativo {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
 @media (max-width: 420px) {
   body {
-    background-color: #f3f5fc;
-    display: flex;
     flex-direction: column;
     align-items: center;
     row-gap: 10px;
     padding: 20px;
   }
 
-  h2 {
-    color: #343a40;
-  }
-
   span {
-    color: #495057;
     vertical-align: middle;
     text-align: center;
     margin-bottom: 30px;
   }
 
   .aluraLogo {
-    align-self: start;
     height: 15%;
     margin-bottom: 10px;
   }
 
   /* Inicio Estilizações relacionadas a classe entradaTexto e seus filhos */
   .entradaTexto {
-    display: flex;
-    flex-direction: column;
     width: 100%;
-    padding: 2%;
   }
 
   #caixaDeTexto {
-    color: #0a3871;
-    background-color: transparent;
-    border-color: transparent;
-    resize: none;
     font-size: large;
     margin-bottom: 20px;
   }
 
   #caixaDeTexto::placeholder {
-    color: #0a3871;
     font-size: large;
-    opacity: 1;
   }
 
-  #caixaDeTexto:focus {
-    outline: 2px solid #0a3871;
+  #botaoCriptografar {
+    width: 100%;
   }
 
-  .material-symbols-outlined {
-    color: #65747d;
-    margin: 0;
+  #botaoDescriptografar {
+    width: 100%;
   }
 
   .botoesCripto-Descripto {
-    display: flex;
     flex-direction: column;
     align-items: center;
     row-gap: 10px;
   }
-
-  #botaoCriptografar {
-    background-color: #0a3871;
-    color: white;
-    width: 328px;
-    height: 67px;
-    border-radius: 24px;
-  }
-
-  #botaoDescriptografar {
-    color: #0a3871;
-    background-color: #d8dfe8;
-    width: 328px;
-    height: 67px;
-    border: 1px solid #0a3871;
-    border-radius: 24px;
-  }
   /* Fim Estilizações relacionadas a classe entradaTexto e seus filhos */
 
   /* Inicio Estilizações relacionadas a classe saidaTexto e seus filhos */
-
   .saidaTexto {
-    background-color: white;
-    display: flex;
     flex-direction: column;
     width: 320px;
-    padding: 2%;
-    border-radius: 32px;
-  }
-
-  .saidaTexto span {
-    color: #495057;
-    text-align: center;
-    flex: 1;
-    margin: 0;
   }
 
   #botaoCopiar {
-    background-color: #0a3871;
-    color: white;
-    width: 328px;
-    height: 67px;
-    border-radius: 24px;
-    align-self: center;
+    width: 100%;
   }
-
-  .semTextoInformativo {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    row-gap: 10px;
-  }
-
   /* Fim Estilizações relacionadas a classe saidaTexto e seus filhos */
 }
 
 @media (min-width: 421px) {
   body {
-    background-color: #f3f5fc;
-    display: flex;
     flex-direction: column;
     align-items: center;
     row-gap: 10px;
     padding: 20px;
-  }
-
-  h2 {
-    color: #343a40;
   }
 
   span {
@@ -149,115 +185,59 @@
   }
 
   .aluraLogo {
-    align-self: start;
     height: 15%;
     margin-bottom: 10px;
   }
 
   /* Inicio Estilizações relacionadas a classe entradaTexto e seus filhos */
   .entradaTexto {
-    display: flex;
-    flex-direction: column;
     width: 100%;
-    padding: 2%;
   }
 
   #caixaDeTexto {
-    color: #0a3871;
-    background-color: transparent;
-    border-color: transparent;
-    resize: none;
     font-size: x-large;
     margin-bottom: 20px;
   }
 
   #caixaDeTexto::placeholder {
-    color: #0a3871;
     font-size: x-large;
-    opacity: 1;
-  }
-
-  #caixaDeTexto:focus {
-    outline: 2px solid #0a3871;
-  }
-
-  .material-symbols-outlined {
-    color: #65747d;
-    margin: 0;
-  }
-
-  .botoesCripto-Descripto {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    column-gap: 10px;
   }
 
   #botaoCriptografar {
-    background-color: #0a3871;
-    color: white;
     width: 328px;
-    height: 67px;
-    border-radius: 24px;
   }
 
   #botaoDescriptografar {
-    color: #0a3871;
-    background-color: #d8dfe8;
     width: 328px;
-    height: 67px;
-    border: 1px solid #0a3871;
-    border-radius: 24px;
+  }
+
+  .botoesCripto-Descripto {
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 10px;
   }
   /* Fim Estilizações relacionadas a classe entradaTexto e seus filhos */
 
   /* Inicio Estilizações relacionadas a classe saidaTexto e seus filhos */
 
   .saidaTexto {
-    background-color: white;
-    display: flex;
     flex-direction: column;
     width: 100%;
-    padding: 2%;
-    border-radius: 32px;
-  }
-
-  .saidaTexto span {
-    color: #495057;
-    text-align: center;
-    flex: 1;
-    margin: 0;
   }
 
   #botaoCopiar {
-    background-color: #0a3871;
-    color: white;
     width: 328px;
-    height: 67px;
-    border-radius: 24px;
-    align-self: center;
   }
 
-  .semTextoInformativo {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    row-gap: 10px;
-  }
+  /* Fim Estilizações relacionadas a classe saidaTexto e seus filhos */
 }
 
 @media (min-width: 992px) {
   body {
-    background-color: #f3f5fc;
-    display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     height: 100vh;
     padding: 20px;
-  }
-
-  h2 {
-    color: #343a40;
   }
 
   span {
@@ -274,101 +254,45 @@
 
   /* Inicio Estilizações relacionadas a classe entradaTexto e seus filhos */
   .entradaTexto {
-    display: flex;
-    flex-direction: column;
     height: 100%;
-    padding: 2%;
   }
 
   #caixaDeTexto {
-    color: #0a3871;
-    background-color: transparent;
-    border-color: transparent;
-    resize: none;
     font-size: xx-large;
     height: 100%;
     margin: 100px 0 20px 0;
   }
 
   #caixaDeTexto::placeholder {
-    color: #0a3871;
     font-size: xx-large;
-    opacity: 1;
-  }
-
-  #caixaDeTexto:focus {
-    outline: 2px solid #0a3871;
-  }
-
-  .material-symbols-outlined {
-    color: #65747d;
-    margin: 0;
-  }
-
-  .botoesCripto-Descripto {
-    display: flex;
-    flex-direction: row;
-    column-gap: 24px;
-    justify-content: start;
   }
 
   #botaoCriptografar {
-    background-color: #0a3871;
-    color: white;
     width: 328px;
-    height: 67px;
-    border-radius: 24px;
   }
 
   #botaoDescriptografar {
-    color: #0a3871;
-    background-color: #d8dfe8;
     width: 328px;
-    height: 67px;
-    border: 1px solid #0a3871;
-    border-radius: 24px;
+  }
+
+  .botoesCripto-Descripto {
+    flex-direction: row;
+    column-gap: 24px;
+    justify-content: start;
   }
   /* Fim Estilizações relacionadas a classe entradaTexto e seus filhos */
 
   /* Inicio Estilizações relacionadas a classe saidaTexto e seus filhos */
 
   .saidaTexto {
-    background-color: white;
-    display: flex;
     flex-direction: column;
     justify-content: center;
     width: 50%;
     height: 100%;
-    padding: 2%;
-    border-radius: 32px;
-  }
-
-  .saidaTexto img {
-    width: 90%;
-    align-self: center;
-  }
-
-  .saidaTexto span {
-    color: #495057;
-    text-align: center;
-    flex: 1;
-    margin: 0;
   }
 
   #botaoCopiar {
-    background-color: #0a3871;
-    color: white;
     width: 328px;
-    height: 67px;
-    border-radius: 24px;
-    align-self: center;
-  }
-
-  .semTextoInformativo {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    row-gap: 10px;
   }
 
   /* Fim Estilizações relacionadas a classe saidaTexto e seus filhos */

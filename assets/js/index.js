@@ -1,6 +1,6 @@
 function botaoCriptografar() {
   let texto = document.getElementById('caixaDeTexto').value;
-  let deslocamento = 1;
+  let deslocamento = 13;
   let resultado = '';
 
   for (let i = 0; i < texto.length; i++) {
@@ -21,7 +21,7 @@ function botaoCriptografar() {
 
 function botaoDescriptografar() {
   let texto = document.getElementById('caixaDeTexto').value;
-  let deslocamento = 1;
+  let deslocamento = 13;
   let resultado = '';
 
   for (let i = 0; i < texto.length; i++) {
@@ -73,8 +73,6 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 
-// Remove a imagem do saidaTexto se o media query fica to tamanho mobile (992px para menor)
-//Ainda não entendi a logica do da linha 80 E 99 (parece estar invertido) MAS DEU CERTO ENTAO VAMOS
 function removeImagem() {
   const saidaTexto = document.getElementById('saidaTexto');
   if (mediaQuery.matches) {
